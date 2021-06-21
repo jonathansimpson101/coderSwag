@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+  padding:  0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  width:  100vw;
+  min-width: 100vw;
+  font-family: 'Permanent Marker', cursive;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: black;
+  cursor:  none;
+}
+
+.mouse{
+  height: 15px;
+  width:  15px;
+  position: absolute;
+  background-color: white;
+  border-radius:  50%;
+  transform: translate(25%, 25%);
+  z-index: 100;
+}
+
+.outermouse{
+  background-color: black;
+  border: 1px solid white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+video{
+  width:  100vw;
+  min-width: 100vw;
+  min-height:  100vh;
+}
+
+.banner{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:  100%;
+  width: 100%;
+}
+
+.brand{
+  color:  white;
+  height:  50px;
+  width: 300px;
+  position:  absolute;
+  top:  45%;
+  left:  50%;
+  transform:  translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: red;
+}
+
+.nav{
+  position:  absolute;
+  top:  65%;
+  left:  50%;
+  transform:  translate(-50%, 0);
+  height:  30px;
+  width: 60%;
+  min-width:  500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+}
+
+.nav-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button > a {
+  color:  white;
+  text-decoration: none;
+  transition-duration:  0.6s;
+}
+
+.nav-button > a:hover {
+  cursor:  none;
+}
+
+.underline{
+  position:  absolute;
+  height:  2px;
+  width:  0%;
+  bottom: 0;
+  background-color: orangered;
+  transition:  0.4s;
+}
+
+.nav-button:hover .underline{
+  width: 14%;
+  background-color:  orangered;
+}
+
+@media (max-width: 800px) and (orientation: portrait){
+
+  .brand{
+    box-shadow: 0 0 2px orangered;
+    box-shadow: 0 0 5px orangered;
+    box-shadow: 0 0 10px orangered;
+    box-shadow: 0 0 20px orangered;
+    box-shadow: 0 0 30px orangered;
+    box-shadow: 0 0 40px orangered;
+  }
+
+  .nav{
+    flex-direction: column;
+  }
+
+  video{
+    display: none;
+  }
+
+  body{
+
+  }
+
+  .nav-button:hover .underline{
+    width: 0% ;
+  }
+
+}
+
+@media (max-aspect-ratio: 1920/1080){
+
+  .brand{
+    box-shadow: 0 0 2px orangered;
+    box-shadow: 0 0 5px orangered;
+    box-shadow: 0 0 10px orangered;
+    box-shadow: 0 0 20px orangered;
+    box-shadow: 0 0 30px orangered;
+    box-shadow: 0 0 40px orangered;
+  }
+
+  .nav{
+    flex-direction: column;
+  }
+
+  video{
+    display: none;
+  }
+
+  body{
+
+  }
+
+  .nav-button:hover .underline{
+    width: 0% ;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

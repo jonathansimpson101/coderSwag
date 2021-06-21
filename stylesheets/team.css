@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+  padding:  0;
+  margin:  0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  font-family: 'Permanent Marker', cursive;
+  overflow-y: hidden;
+}
+
+.home-icon{
+  color: white;
+  font-size: 20px;
+  position:  absolute;
+  top: 20px;
+  left:  50vw;
+}
+
+.container {
+  position:  absolute;
+  top:  60px;
+  left:  0;
+  width:  100vw;
+  height:  100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1{
+  color:  white;
+  font-size: 3vw;
+}
+
+.intro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.profile-picture{
+  height:  600px;
+  width: 45%;
+  background-image: url('../images/harsch.jpg');
+  background-position: center;
+  background-size:  cover;
+  box-shadow: 0 0 30px black inset;
+}
+
+.intro-text{
+  width:  45%;
+  height:  600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:  2%;
+  animation: borderAnimation 10s ease-in-out none infinite alternate;
+}
+
+@keyframes borderAnimation {
+
+  0%{
+    box-shadow: 0 0 20px orangered;
+    border:  4px solid orangered;
+  }
+
+  25%{
+    box-shadow: 0 0 20px orange;
+    border:  4px solid orange;
+  }
+
+  50% {
+    box-shadow: 0 0 20px pink;
+    border:  4px solid pink;
+  }
+
+  75%{
+    box-shadow: 0 0 20px hotpink;
+    border:  4px solid hotpink;
+  }
+
+  100%{
+    box-shadow: 0 0 20px steelblue;
+    border:  4px solid steelblue;
+  }
+
+  100%{
+    box-shadow: 0 0 20px cyan;
+    border:  4px solid cyan;
+  }
+
+}
+
+.intro-text h4{
+  color:  white;
+  font-size: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
